@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buyurtma berish — MADAD AI</title>
+<meta name="description" content="MADAD AI orqali uyga hamshira chaqirish uchun onlayn buyurtma bering: xizmat turi, sana va manzilni tanlang.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="order">
+
+<div id="pageLoader" class="page-loader"><div class="loader-ring"></div></div>
+<div id="app-header"></div>
+<div id="app-sidebar"></div>
+
+<main>
+  <section class="section section-tint">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><i class="fa-solid fa-clipboard-list"></i> Buyurtma berish</span>
+        <h2>Hamshira yoki shifokor chaqiring</h2>
+        <p>Quyidagi formani to'ldiring — bizning operatorimiz tez orada siz bilan bog'lanadi.</p>
+      </div>
+
+      <form id="orderForm" class="form-shell wide reveal" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="orderName">Ism va familiya *</label>
+            <input type="text" id="orderName" required>
+            <div class="error-text">Iltimos, ism va familiyangizni kiriting.</div>
+          </div>
+          <div class="form-group">
+            <label for="orderPhone">Telefon raqam *</label>
+            <input type="tel" id="orderPhone" placeholder="+998 90 123 45 67" required>
+            <div class="error-text">To'g'ri telefon raqam kiriting.</div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="orderRegion">Viloyat *</label>
+            <select id="orderRegion" required><option value="">Viloyat tanlang</option></select>
+            <div class="error-text">Viloyatni tanlang.</div>
+          </div>
+          <div class="form-group">
+            <label for="orderDistrict">Tuman *</label>
+            <select id="orderDistrict" required><option value="">Tuman tanlang</option></select>
+            <div class="error-text">Tumanni tanlang.</div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="orderMahalla">Mahalla *</label>
+            <select id="orderMahalla" required><option value="">Mahalla tanlang</option></select>
+            <div class="error-text">Mahallani tanlang.</div>
+          </div>
+          <div class="form-group">
+            <label for="orderAddress">Aniq manzil *</label>
+            <input type="text" id="orderAddress" placeholder="Ko'cha, uy raqami" required>
+            <div class="error-text">Manzilni kiriting.</div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="orderService">Xizmat turi *</label>
+            <select id="orderService" required>
+              <option value="">Tanlang</option>
+              <option>Uyda parvarish</option>
+              <option>Ukol va dropper</option>
+              <option>Bosim o'lchash</option>
+              <option>Tibbiy test</option>
+              <option>Kechasi qo'riqchi</option>
+              <option>Bolalar hamshirasi</option>
+              <option>Fiziologik protseduralar</option>
+            </select>
+            <div class="error-text">Xizmat turini tanlang.</div>
+          </div>
+          <div class="form-group">
+            <label for="orderNurse">Hamshira tanlash</label>
+            <select id="orderNurse"></select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="orderDate">Sana va vaqt *</label>
+            <input type="datetime-local" id="orderDate" required>
+            <div class="error-text">Sana va vaqtni tanlang.</div>
+          </div>
+          <div class="form-group">
+            <label for="orderProblem">Muammo tavsifi</label>
+            <input type="text" id="orderProblem" placeholder="Qisqacha tavsiflang">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="orderNote">Qo'shimcha izoh</label>
+          <textarea id="orderNote" placeholder="Qo'shimcha ma'lumot kiriting..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-paper-plane"></i> Buyurtma Berish</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div id="app-footer"></div>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reytinglar — MADAD AI</title>
+<meta name="description" content="MADAD AI eng yuqori baholangan hamshiralari reytingi va foydalanuvchi izohlari.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="ratings">
+
+<div id="pageLoader" class="page-loader"><div class="loader-ring"></div></div>
+<div id="app-header"></div>
+<div id="app-sidebar"></div>
+
+<main>
+  <section class="section section-tint" style="padding-bottom:20px;">
+    <div class="container section-head reveal">
+      <span class="eyebrow"><i class="fa-solid fa-star"></i> Reytinglar</span>
+      <h2>Eng yuqori reytingli hamshiralar</h2>
+      <p>Bemorlarimizning haqiqiy baho va izohlariga asoslangan reyting jadvali.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt" style="padding-top:10px;">
+    <div class="container">
+      <div class="podium" id="ratingsPodium"></div>
+      <div class="card" id="ratingsList" style="padding:6px 20px;"></div>
+    </div>
+  </section>
+
+  <section class="section section-tint">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><i class="fa-solid fa-comment-dots"></i> Izohlar</span>
+        <h2>Foydalanuvchi izohlari</h2>
+      </div>
+      <div class="grid grid-people" id="reviewsBox"></div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="form-shell reveal">
+        <h3 style="text-align:center;">Hamshirani baholang</h3>
+        <form id="reviewForm">
+          <div class="form-group">
+            <label>Yulduzlarni tanlang</label>
+            <div class="star-input" id="starInput">
+              <i class="fa-solid fa-star" data-v="1"></i>
+              <i class="fa-solid fa-star" data-v="2"></i>
+              <i class="fa-solid fa-star" data-v="3"></i>
+              <i class="fa-solid fa-star" data-v="4"></i>
+              <i class="fa-solid fa-star" data-v="5"></i>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="reviewText">Izohingiz</label>
+            <textarea id="reviewText" placeholder="Tajribangizni baham ko'ring..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-paper-plane"></i> Izoh qoldirish</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="app-footer"></div>
+<script src="js/script.js"></script>
+</body>
+</html>

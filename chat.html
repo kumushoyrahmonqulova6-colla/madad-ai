@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat — MADAD AI</title>
+<meta name="description" content="MADAD AI orqali hamshira va shifokorlar bilan to'g'ridan-to'g'ri chatda muloqot qiling.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<style>main{ padding-top: var(--header-h); } body{ overflow: hidden; }</style>
+</head>
+<body data-page="chat">
+
+<div id="pageLoader" class="page-loader"><div class="loader-ring"></div></div>
+<div id="app-header"></div>
+<div id="app-sidebar"></div>
+
+<main>
+  <div class="chat-shell">
+    <aside class="chat-contacts" id="chatContactsWrap">
+      <div class="chat-search"><input type="text" placeholder="Qidirish..." aria-label="Kontakt qidirish"></div>
+      <div id="chatContacts"></div>
+    </aside>
+    <section class="chat-window">
+      <div class="chat-window-head" id="chatWindowHead"></div>
+      <div class="chat-messages" id="chatMessages"></div>
+      <div class="quick-replies">
+        <button type="button" class="chip">Hamshira chaqirish</button>
+        <button type="button" class="chip">Narxlar qancha?</button>
+        <button type="button" class="chip">Qachon kelasiz?</button>
+      </div>
+      <form id="chatForm" class="chat-input-row">
+        <input type="text" id="chatInput" placeholder="Xabar yozing..." aria-label="Xabar" autocomplete="off">
+        <button type="submit" aria-label="Yuborish"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </section>
+  </div>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>

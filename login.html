@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kirish — MADAD AI</title>
+<meta name="description" content="MADAD AI tizimiga kirish — bemor yoki hamshira sifatida hisobingizga ulaning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login">
+
+<div id="pageLoader" class="page-loader"><div class="loader-ring"></div></div>
+<div id="app-header"></div>
+<div id="app-sidebar"></div>
+
+<main>
+  <section class="section section-tint" style="min-height: calc(100vh - var(--header-h)); display:flex; align-items:center;">
+    <div class="container">
+      <div class="form-shell reveal">
+        <div style="text-align:center; margin-bottom:24px;">
+          <span class="logo-badge" style="display:inline-flex; width:54px; height:54px; font-size:1.4rem; margin-bottom:14px;"><i class="fa-solid fa-heart-pulse"></i></span>
+          <h2 style="margin-bottom:4px;">Hisobingizga kiring</h2>
+          <p style="color:var(--text-light); margin:0;">MADAD AI orqali tibbiy yordamga ulaning</p>
+        </div>
+        <form id="loginForm" novalidate>
+          <div class="form-group">
+            <label for="loginPhone">Telefon raqam *</label>
+            <input type="tel" id="loginPhone" placeholder="+998 90 123 45 67" required>
+            <div class="error-text">Telefon raqamni to'g'ri kiriting.</div>
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">Parol *</label>
+            <input type="password" id="loginPassword" placeholder="********" required>
+            <div class="error-text">Parolni kiriting.</div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-right-to-bracket"></i> Kirish</button>
+        </form>
+        <p style="text-align:center; margin-top:18px; font-size:.9rem; color:var(--text-light);">
+          Hisobingiz yo'qmi? <a href="register.html" style="color:var(--primary); font-weight:700;">Ro'yxatdan o'ting</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="app-footer"></div>
+<script src="js/script.js"></script>
+</body>
+</html>

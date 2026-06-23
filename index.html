@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MADAD AI — Uyga malakali hamshira chaqiring</title>
+<meta name="description" content="MADAD AI — AI yordamida eng mos hamshira va shifokorni toping. Uyda parvarish, ukol, monitoring va boshqa tibbiy xizmatlarni onlayn buyurtma qiling.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+<div id="pageLoader" class="page-loader"><div class="loader-ring"></div></div>
+
+<div id="app-header"></div>
+<div id="app-sidebar"></div>
+
+<main>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow"><i class="fa-solid fa-robot"></i> AI yordamida tibbiy yordam</span>
+        <h1>Uyga malakali hamshira chaqiring</h1>
+        <p class="tagline">AI yordamida eng mos hamshira va shifokorni toping. Tez, ishonchli va professional uyda tibbiy parvarish xizmati.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" data-open-sidebar><i class="fa-solid fa-user-nurse"></i> Hamshira chaqirish</button>
+          <button class="btn btn-outline" data-scroll-to="#ai-help"><i class="fa-solid fa-comment-medical"></i> Maslahat olish</button>
+        </div>
+        <div class="stats-row">
+          <div><div class="stat-num">47+</div><div class="stat-label">Hamshira</div></div>
+          <div><div class="stat-num">1.2K</div><div class="stat-label">Bemor</div></div>
+          <div><div class="stat-num">4.9★</div><div class="stat-label">Reyting</div></div>
+          <div><div class="stat-num">24/7</div><div class="stat-label">Xizmat</div></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-orb"><i class="fa-solid fa-user-nurse"></i></div>
+        <div class="float-card fc-1"><i class="fa-solid fa-circle-check"></i> Tasdiqlangan mutaxassis</div>
+        <div class="float-card fc-2"><i class="fa-solid fa-clock"></i> 24/7 xizmatda</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <form class="filter-bar" id="homeSearchForm" aria-label="Hudud bo'yicha qidirish">
+        <div class="field"><label for="homeRegion">Viloyat</label>
+          <select id="homeRegion" required><option value="">Viloyat tanlang</option></select>
+        </div>
+        <div class="field"><label for="homeDistrict">Tuman</label>
+          <select id="homeDistrict" disabled required><option value="">Tuman tanlang</option></select>
+        </div>
+        <div class="field"><label for="homeMahalla">Mahalla</label>
+          <select id="homeMahalla" disabled required><option value="">Mahalla tanlang</option></select>
+        </div>
+        <div class="field" style="align-self:end;">
+          <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-magnifying-glass"></i> Qidirish</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section" id="ai-help">
+    <div class="container">
+      <div class="ai-block reveal">
+        <div class="ai-block-head"><i class="fa-solid fa-brain"></i><h2 style="margin:0; color:#fff;">Qanday yordam kerak?</h2></div>
+        <p style="color:rgba(255,255,255,.85); max-width:560px;">Simptomingizni yozing — MADAD AI sizga eng mos mutaxassisni tavsiya qiladi.</p>
+        <form id="aiForm" class="ai-form">
+          <input type="text" id="aiSymptomInput" placeholder="Masalan: Boshim og'riyapti..." aria-label="Simptom">
+          <button type="submit" class="btn btn-accent">Tavsiya olish</button>
+        </form>
+        <div class="ai-result" id="aiResult"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><i class="fa-solid fa-list-check"></i> Xizmatlar</span>
+        <h2>Biz taklif qiladigan xizmatlar</h2>
+        <p>Uyingizda professional tibbiy yordamni qulay va xavfsiz tarzda oling.</p>
+      </div>
+      <div class="grid grid-services">
+        <div class="card service-card reveal"><div class="service-icon"><i class="fa-solid fa-house-medical"></i></div><h3>Uyda Parvarish</h3><p>Malakali hamshira tomonidan to'liq parvarish xizmati.</p></div>
+        <div class="card service-card reveal"><div class="service-icon"><i class="fa-solid fa-syringe"></i></div><h3>Ukol &amp; Dropper</h3><p>Shifokor tayinlagan dori-darmonlarni xavfsiz yuborish.</p></div>
+        <div class="card service-card reveal"><div class="service-icon"><i class="fa-solid fa-heart-pulse"></i></div><h3>Monitoring</h3><p>Qon bosimi, puls va boshqa ko'rsatkichlarni nazorat qilish.</p></div>
+        <div class="card service-card reveal"><div class="service-icon"><i class="fa-solid fa-baby"></i></div><h3>Bolalar Hamshirasi</h3><p>Chaqaloq va bolalar uchun maxsus parvarish xizmati.</p></div>
+        <div class="card service-card reveal"><div class="service-icon"><i class="fa-solid fa-vial"></i></div><h3>Tibbiy Testlar</h3><p>Uyda qon va boshqa tahlillarni topshirish imkoniyati.</p></div>
+        <div class="card service-card reveal"><div class="service-icon"><i class="fa-solid fa-moon"></i></div><h3>Kechasi Qo'riqchi</h3><p>Tunda bemor yonida bo'ladigan kuzatuvchi hamshira.</p></div>
+        <div class="card service-card reveal"><div class="service-icon"><i class="fa-solid fa-dumbbell"></i></div><h3>Reabilitatsiya</h3><p>Jarohatdan keyin tiklanish bo'yicha mashqlar va parvarish.</p></div>
+        <div class="card service-card reveal"><div class="service-icon"><i class="fa-solid fa-pills"></i></div><h3>Dori Tarqatish</h3><p>Belgilangan vaqtda dori-darmonlarni qabul qilishni kuzatish.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tint">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><i class="fa-solid fa-user-nurse"></i> Tanlangan hamshiralar</span>
+        <h2>Eng yuqori baholangan hamshiralar</h2>
+      </div>
+      <div class="grid grid-people" id="featuredNurses"></div>
+      <div style="text-align:center; margin-top:30px;"><a href="nurses.html" class="btn btn-outline">Barcha hamshiralarni ko'rish <i class="fa-solid fa-arrow-right"></i></a></div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><i class="fa-solid fa-user-doctor"></i> Shifokorlar</span>
+        <h2>Tajribali shifokorlar bilan maslahat</h2>
+      </div>
+      <div class="grid grid-people" id="featuredDoctors"></div>
+      <div style="text-align:center; margin-top:30px;"><a href="doctors.html" class="btn btn-outline">Barcha shifokorlarni ko'rish <i class="fa-solid fa-arrow-right"></i></a></div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="reveal">Hoziroq yordam oling</h2>
+      <p class="reveal">Malakali hamshira yoki shifokor sizga 30 daqiqa ichida yetib boradi.</p>
+      <div class="cta-actions reveal">
+        <button class="btn btn-white" data-open-sidebar><i class="fa-solid fa-user-nurse"></i> Hamshira Chaqirish</button>
+        <a href="register.html" class="btn btn-outline-white">Ro'yxatdan O'tish</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div id="app-footer"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

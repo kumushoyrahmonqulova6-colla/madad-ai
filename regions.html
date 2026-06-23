@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hududlar — MADAD AI</title>
+<meta name="description" content="Viloyat, tuman va mahalla bo'yicha MADAD AI hamshira va shifokorlarini qidiring.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="regions">
+
+<div id="pageLoader" class="page-loader"><div class="loader-ring"></div></div>
+<div id="app-header"></div>
+<div id="app-sidebar"></div>
+
+<main>
+  <section class="section section-tint">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow"><i class="fa-solid fa-map-location-dot"></i> Hududlar</span>
+        <h2>Hududingiz bo'yicha qidiruv</h2>
+        <p>Viloyat, tuman va mahallangizni tanlang — mavjud hamshira va shifokorlarni ko'rsatamiz.</p>
+      </div>
+
+      <div class="filter-bar reveal" style="grid-template-columns: repeat(3,1fr); max-width:900px; margin:0 auto;">
+        <div class="field"><label for="regionsViloyat">Viloyat</label>
+          <select id="regionsViloyat"><option value="">Viloyat tanlang</option></select>
+        </div>
+        <div class="field"><label for="regionsTuman">Tuman</label>
+          <select id="regionsTuman" disabled><option value="">Tuman tanlang</option></select>
+        </div>
+        <div class="field"><label for="regionsMahalla">Mahalla</label>
+          <select id="regionsMahalla" disabled><option value="">Mahalla tanlang</option></select>
+        </div>
+      </div>
+
+      <div class="region-summary" id="regionsSummary" style="justify-content:center;"></div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="grid grid-people" id="regionsNurseGrid">
+        <div class="empty-state" style="grid-column:1/-1;">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <p>Natijalarni ko'rish uchun hududingizni to'liq tanlang.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="app-footer"></div>
+<script src="js/script.js"></script>
+</body>
+</html>
